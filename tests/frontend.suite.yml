@@ -1,0 +1,13 @@
+class_name: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url: http://localhost:8080/
+            browser: firefox
+            window_size: maximize
+            path: ""
+
+        - Yii2:
+            part: orm
+            entryScript: index-test.php
+            cleanup: false
